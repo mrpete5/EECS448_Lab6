@@ -1,0 +1,61 @@
+<html>
+  <head>
+	<link rel="stylesheet" href="./style.css">
+	<script src="./formChecker.js"></script>
+	<title>Web Store - Lab 6</title>
+	<h1>Lab 6 Exercise 3 - Web Store</h1>
+  </head>
+  <body>
+		<a href="./index.html">Home</a>
+		<form action="./customerBackend.php" method="post">
+			<div class="items">
+					<div class="football">
+						<img src="picture/football.jpeg" width="300" height="200"></a><br>
+							<b>Football $27</b><br>
+							Quantity: 
+							<input type="number" label="Quantity" id="football" name="football" min="0" value="0">
+					</div>
+					<div class="banana">
+						<img src="picture/banana.jpeg" width="300" height="200"></a><br>
+							<b>Banana $1</b><br>
+							Quantity: 
+							<input type="number" label="Quantity" id="banana" name="banana" min="0" value="0">
+					</div>
+					<div class="toothpaste">
+						<img src="picture/toothpaste.jpeg" width="300" height="200"></a><br>
+							<b>Toothpaste $4</b><br>
+							Quantity: 
+							<input type="number" label="Quantity" id="toothpaste" name="toothpaste" min="0" value="0">
+					</div>
+			</div>
+			<div class="shipping">
+				<b>Select a shipping method:</b><br>
+				
+					  <input type="radio" id="free" name="shipping" value="free">
+					  <label for="free">Free 7 day</label><br>
+					  <input type="radio" id="overnight" name="shipping" value="overnight">
+					  <label for="overnight">$50 over night</label><br>
+					  <input type="radio" id="3day" name="shipping" value="3day">
+					  <label for="3day">$5 three day</label><br>
+				
+			</div>
+			<div class="credentials">
+				<b>Enter your credentials:</b><br>
+				<input type="email" id="email" name="email" placeholder="Email"><br>
+				<input type="password" id="password" name="password" placeholder="Password"><br>
+			</div>
+			<div class="buttons">
+				<div class="reset">
+					<input type="reset" value="Reset" onclick="reset()">
+				</div>
+				<div class="submit">	
+					<input type="submit" value="Submit Order" onclick="return validateForm()">
+				</div>
+			</div>
+		</form>
+		
+	
+		
+		
+  </body>
+</html>
